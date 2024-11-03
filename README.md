@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aegis
+
+Aegis is a platform that allows patients to securely access their health records using verifiable credentials, such as Personal Identity Cards or Health Insurance Cards. Patients can selectively disclose data to medical practitioners or healthcare providers and revoke access at any time.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Ensure that **Docker** is installed and running on your machine.
+- Install **Node.js** and **npm** if you haven’t already.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation and Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. `npm install`
+2. `npm run build`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Setting up env variables
 
-## Learn More
+- Replace `PINATA_JWT`, `NEXT_PUBLIC_GATEWAY_URL`, `SERVER_URL` ( with your ngrok url for :3000 port)
 
-To learn more about Next.js, take a look at the following resources:
+## Stating docker container
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `docker compose up`
