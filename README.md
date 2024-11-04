@@ -69,7 +69,7 @@ JSON body
 - Copy the response URL (`open-credential-offer://...`) to a QR code generator (e.g., [QRCode Generator](https://www.qrcode-generator.de)).
 
 - Scan the QR code with your wallet app, such as [iGrant.io DataWallet](https://igrant.io/datawallet.html).
-
+- PIN: 1234
 ```
 
 ```
